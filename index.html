@@ -24,41 +24,44 @@
             <h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
           </header>
-          <div class="reason">
-            <h3>Настоящий городок</h3>
-            <p>
-              - № 1 -
-            </p>
-            <p>
-            Седона - не атракцион для туристов, там течет своя жизнь
-            </p>
           <div class="media-block">
-            <img src="http://placehold.it/150x100" alt="" />
-          </div>
-          </div>
-
-            <div class="feature">
-              <ul>
-                <li class="feature-housing">
-                  <h4>Жилье</h4>
-                  <p>
-                  Рекомендуем пожить в настоящем мотеле, все как в кино!
-                  </p>
-                </li>
-                <li class="feature-food">
-                  <h4>Еда</h4>
-                  <p>
-                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-                  </p>
-                </li>
-                <li class="feature-souvenirs">
-                  <h4>Сувениры</h4>
-                  <p>
-                  Не только китайского, но и местного производства!
-                  </p>
-                </li>
-              </ul>
+            <div class="reason">
+              <h3>Настоящий городок</h3>
+              <p>
+                - № 1 -
+              </p>
+              <p>
+                Седона - не атракцион для туристов,
+                там течет своя жизнь
+              </p>
             </div>
+            <figure>
+              <img src="http://placehold.it/150x100" alt="" />
+            </figure>
+          </div>
+            <ul class="features">
+              <li class="feature-housing">
+                <h4>Жилье</h4>
+                <p>
+                  Рекомендуем пожить в настоящем мотеле,
+                  все как в кино!
+                </p>
+              </li>
+              <li class="feature-food">
+                <h4>Еда</h4>
+                <p>
+                  Всегда заказывайте фирменный бургер,
+                  вы не разочаруетесь!
+                </p>
+              </li>
+              <li class="feature-souvenirs">
+                <h4>Сувениры</h4>
+                <p>
+                  Не только китайского,
+                  но и местного производства!
+                </p>
+              </li>
+            </ul>
 
             <div class="reason">
               <div class="media-block">
@@ -67,7 +70,8 @@
               <h3>Там есть мост дьявола</h3>
               <p>- № 2 -</p>
               <p>
-              Да, по нему можно пройти! Если конечно вы осмелитесь
+                Да, по нему можно пройти!
+                Если конечно вы осмелитесь
               </p>
             </div>
               <ul class="reasons-list">
@@ -75,21 +79,24 @@
                   <h4>Небольшая площадь</h4>
                   <p>- № 3 -</p>
                   <p>
-                  Все достопремечательности находятся очень близко
+                    Все достопремечательности
+                    находятся очень близко
                   </p>
                 </li>
                 <li>
                   <h4>Красивая дорога</h4>
                   <p>- № 4 -</p>
                   <p>
-                  Ехать в седону из Лас-Вегаса совсем не скучно!
+                    Ехать в седону из Лас-Вегаса совсем
+                    не скучно!
                   </p>
                 </li>
                 <li>
                   <h4>Мало туристов</h4>
                   <p>- № 5 -</p>
                   <p>
-                  Большенство едет в Гранд Каньон и толпится там
+                    Большенство едет в Гранд Каньон и
+                    толпится там
                   </p>
                 </li>
               </ul>
@@ -97,36 +104,37 @@
               <header class="interested">
                 <h4>Заинтересовались?</h4>
                 <p>
-                Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+                  Укажите предполагаемые даты поездки,
+                  и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
               </header>
-              <img src="http://placehold.it/150x100" alt="map" />
+              <img src="http://placehold.it/150x100" alt="map">
               <div class="hotels-search">
                 <h4>
                   Поиск гостиницы в седоне
                 </h4>
                 <form action="" method="post">
-                  <div class="arrive">
+                  <div class="date-with-button">
                     <label for="check-in">Дата заезда:</label>
-                    <input [type="date"] id="check-in">
-                    <button type="submit" class="date-wiht-button">
+                    <input type="date" id="check-in">
+                    <button type="button" class="calendar">
                   </div>
-                  <div class="check-out">
+                  <div class="date-with-button">
                     <label for="check-out">Дата выезда:</label>
-                    <input [type="date"] id="check-out">
-                    <button type="submit" class="date-with-button">
+                    <input type="date" id="check-out">
+                    <button type="button" class="calendar">
                   </div>
-                  <div class="adult">
-                    <input type="button" value="-" class="sign">
-                    <label for="date">Взрослые:</label>
-                    <input [type="number"] value="2">
-                    <button type="submit"value="+" class="sign">
+                  <div class="number-with-button">
+                    <label for="adults-count">Взрослые:</label>
+                    <button type="button" class="decrease-number">
+                    <input type="number" value="2" id="adults-count">
+                    <button type="button" class="increase-number">
                   </div>
-                  <div class="children">
-                    <input type="button" value="-" class="sign">
-                    <label for="date">Дети:</label>
-                    <input [type="number"] value="0">
-                    <button type="submit"value="+" class="sign">
+                  <div class="number-with-button">
+                    <label for="childrens-count">Дети:</label>
+                    <button type="button" class="decrease-number">
+                    <input type="number" value="0" id="childrens-count">
+                    <button type="button" class="increase-number">
                   </div>
                   <div class="buttons">
         				    <input type="submit" value="Найти">
