@@ -4,29 +4,29 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
-      <header="main-header">
-        <a href="index.html"><img src="img/img_logo.jpg" width="137" height="70" alt="city of sedona" class="logo"></a>
+      <header class="main-header">
+        <a href="index.html" class="logo"><img src="img/img_logo_sedona.png" width="137" height="70" alt="city of sedona"></a>
         <nav>
           <ul class="main-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li class="left first"><a href="#">Информация</a></li>
+            <li class="left second"><a href="#">Фото и видео</a></li>
+            <li class="right third"><a href="#">Карта штата</a></li>
+            <li class="right fourth"><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <main class="main-content">
         <img src="img/index_sedona.jpg" width="1200" height="509" alt="Sedona" class="banner">
         <div class="promo">
-          <header>
+          <header class="city-of-sedona">
             <h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </header>
-          <div class="media-block">
+          <div class="media-block clearfix">
             <div class="reason">
               <h3>Настоящий городок</h3>
               <p>
@@ -41,7 +41,7 @@
               <img src="img/img_first_reason_index.jpg" width="800" height="256" alt="">
             </figure>
           </div>
-          <ul class="features">
+          <ul class="features clearfix">
             <li class="feature-housing">
               <h3>Жилье</h3>
               <p>
@@ -64,7 +64,7 @@
               </p>
             </li>
           </ul>
-          <div class="media-block">
+          <div class="media-block clearfix">
             <figure>
               <img src="img/img_second_reason_index.jpg" width="800" height="256" alt="">
             </figure>
@@ -77,8 +77,8 @@
               </p>
             </div>
           </div>
-          <ul class="reasons-list">
-            <li class="reason">
+          <ul class="reasons-list clearfix">
+            <li class="reasons">
               <h3>Небольшая площадь</h3>
               <p>- № 3 -</p>
               <p>
@@ -86,7 +86,7 @@
                 находятся очень близко
               </p>
             </li>
-            <li class="reason">
+            <li class="reasons">
               <h3>Красивая дорога</h3>
               <p>- № 4 -</p>
               <p>
@@ -94,7 +94,7 @@
                 не скучно!
               </p>
             </li>
-            <li class="reason">
+            <li class="reasons">
               <h3>Мало туристов</h3>
               <p>- № 5 -</p>
               <p>
@@ -104,19 +104,19 @@
             </li>
           </ul>
           <div class="hotel-search">
-            <header class="interested">
+            <header class="hotel-search-header">
               <h1>Заинтересовались?</h1>
               <p>
                 Укажите предполагаемые даты поездки,
                 и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
             </header>
-            <img src="img/img_map_index.jpg" width="1200" height="593" alt="map">
-            <div class="hotels-search">
-              <h4>
-                Поиск гостиницы в седоне
-              </h4>
-              <form action="" method="post">
+            <div class="hotel-search-content">
+              <img src="img/img_map_index.jpg" width="1200" height="593" alt="map">
+              <form action="" method="post" class="search-form">
+                <h4 class="search-hotel-sedona">
+                  Поиск гостиницы в седоне
+                </h4>
                 <label for="check-in">Дата заезда:</label>
                 <div class="date-with-button">
                   <input type="date" id="check-in">
@@ -158,7 +158,7 @@
           <li><a href="#"><i class="social-yout"></i></a></li>
         </ul>
         <address class="autor">
-          <a href="#"> website by <img src="img/img_htmlacademy.jpg" width="113" height="39" alt="htmlacademy"> </a>
+          <a href="#"> website by <img src="img/img_htmlacademy.png" width="113" height="39" alt="htmlacademy"> </a>
         </address>
       </footer>
     </div>

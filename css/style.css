@@ -1,18 +1,229 @@
 body{
+  font-size: 14px;
+  line-height: 21px;
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  margin:0;
+  text-transform: uppercase;
 }
+/*index.html*/
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  position:relative;
+}
+.main-header{
+  width: 1200px;
+  height: 56px;
+  background-color: lightblue;
+}
+.main-navigation{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-navigation li{
+  width: 240px;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+}
+.left.first{
+  margin-left: 72px;
+}
+.left.second{
+  margin-right: 96px;
+}
+.right.fourth{
+  margin-right: 72px;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.logo{
+  position: absolute;
+  left:530px;
+  top:0;
+}
+.city-of-sedona{
+  text-align: center;
+  height: 216px;
+  background-color: lightblue;
+}
+.media-block{
+  width: 1200px;
+  height: 256px;
+}
+.reason{
+  float:left;
+  width: 400px;
+  height: 256px;
+  background-color: lightgreen;
+}
+figure{
+  float:right;
+  margin: 0;
+}
+.features{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: lightblue;
+}
+.feature-housing{
+  float: left;
+  width: 400px;
+  height: 330px;
+  text-align: center;
+}
+.feature-food{
+  float: left;
+  width: 400px;
+  height: 330px;
+  text-align: center;
+}
+.feature-souvenirs{
+  float: left;
+  width: 400px;
+  height: 330px;
+  text-align: center;
+}
+.reasons-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: lightblue;
+}
+.reasons{
+  float: left;
+  width: 400px;
+  height: 256px;
+}
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.hotel-search-content{
+  position: relative;
+}
+.hotel-search-header{
+  background-color: lightgreen;
+  margin-bottom: 54px;
+}
+.search-form{
+  position: absolute;
+  width: 568px;
+  height: 481px;
+  background-color: lightblue;
+  left: 316px;
+  top: -54px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-hotel-sedona{
+  background-color: lightgreen;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main-footer{
+  position: absolute;
+  width: 1200px;
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  background-color: grey;
+}
+.autor{
+  float: right;
+}
+/*catalog.html*/
+.main-content{
+  width: 1200px;
+  min-height: 757px;
+}
+.filters{
+  width: 1200px;
+  height: 217px;
+  background-color: grey;
+}
+.form-column{
+  float: left;
+  border: none;
+}
+.form-column-right{
+  float: right;
+  border: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.result{
+  width: 1200px;
+  height: 87px;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: lightgreen;
+}
+.find,
+.sort-caption,
+.sort-item{
+  float: left;
+  margin-right: 32px;
+}
+.sort-up,
+.sort-down{
+  float: right;
+}
+.hotel{
+  background-color: lightblue;
+  border-bottom: 2px solid #e5e5e5;
+}
+.hotel-info{
+  float: left;
+  clear: both;
+  height: 150px;
+  width: 887px;
+}
+.hotel-img{
+  float: left;
+  margin-right: 10px;
+}
+.hotel-rating{
+  float: right;
+}
+.main-footer-catalog{
+  width: 1200px;
+  height: 120px;
+  background: grey;
+}
+/*Общие стили*/
 h1{
   font-size: 21px;
   line-height: 24px;
   color: #000000;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  margin: 0;
 }
 h2{
+  margin: 0;
+}
+h3{
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  margin: 0;
+}
+
+p{
+  margin: 0;
 }
