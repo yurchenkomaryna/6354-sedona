@@ -14,10 +14,10 @@
         </a>
         <nav>
           <ul class="main-navigation">
-            <li class="left first"><a href="#">Информация</a></li>
-            <li class="left second"><a href="#">Фото и видео</a></li>
-            <li class="right third"><a href="#">Карта штата</a></li>
-            <li class="right fourth"><a href="#">Гостиницы</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -25,7 +25,7 @@
         <form class="filters" action="index.html" method="post">
           <fieldset class="form-column">
             <legend>Инфраструктура:</legend>
-            <ul>
+            <ul class="ul_checkbox">
               <li>
                 <input type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Басейн</label>
@@ -42,7 +42,7 @@
           </fieldset>
           <fieldset class="form-column">
             <legend>Тип жилья:</legend>
-            <ul>
+            <ul class="ul_checkbox">
               <li>
                 <input type="checkbox" name="hotel" value="" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
@@ -73,7 +73,7 @@
 
         <div class="result">
           <h2 class="find">Найдено: 3</h2>
-          <ul>
+          <ul class="ul_checkbox">
             <li class="sort-caption">Сортировка:</li>
             <li class="sort-item active"><a href="#">По цене</a></li>
             <li class="sort-item"><a href="#">По типу</a></li>
@@ -85,12 +85,14 @@
         <div class="hotel clearfix">
           <div class="hotel-info">
             <img src="img/img_amara_hotel.jpg" width="135" height="89" alt="Amara" class="hotel-img">
-            <h3>Amara resort & spa</h3>
-            <p>
-              <span class="hotel-type">Гостиница</span> <span>от 3500 р.</span>
-            </p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <div class="hotel-description">
+              <h3>Amara resort & spa</h3>
+              <p>
+                <span class="hotel-type">Гостиница</span> <span>от 3500 р.</span>
+              </p>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-rating">
             <ul class="stars">
@@ -105,12 +107,14 @@
         <div class="hotel clearfix">
           <div class="hotel-info">
             <img src="img/img_desert_hotel.jpg" width="135" height="89" alt="Desert" class="hotel-img">
-            <h3>Desert Quail inn</h3>
-            <p>
-              <span class="hotel-type">Мотель</span> <span>от 2000 р.</span>
-            </p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <div class="hotel-description">
+              <h3>Desert Quail inn</h3>
+              <p>
+                <span class="hotel-type">Мотель</span> <span>от 2000 р.</span>
+              </p>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-rating">
             <ul>
@@ -123,12 +127,14 @@
         <div class="hotel clearfix">
           <div class="hotel-info">
             <img src="img/img_villas_hotel.jpg" width="135" height="89" alt="Villas" class="hotel-img">
-            <h3>Villas at poco diablo</h3>
-            <p>
-              <span class="hotel-type">Апартаменты</span> <span>от 4000 р.</span>
-            </p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <div class="hotel-description">
+              <h3>Villas at poco diablo</h3>
+              <p>
+                <span class="hotel-type">Апартаменты</span> <span>от 4000 р.</span>
+              </p>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-rating">
             <ul>
@@ -141,7 +147,7 @@
         </div>
       </main>
 
-      <footer class="main-footer-catalog">
+      <footer class="main-footer">
         <p>
           #visitsedona
         </p>

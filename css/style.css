@@ -7,202 +7,6 @@ body{
   margin:0;
   text-transform: uppercase;
 }
-/*index.html*/
-.container{
-  width: 1200px;
-  margin: 0 auto;
-  position:relative;
-}
-.main-header{
-  width: 1200px;
-  height: 56px;
-  background-color: lightblue;
-}
-.main-navigation{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.main-navigation li{
-  width: 240px;
-  margin: 0 auto;
-  display: inline-block;
-  float: left;
-}
-.left.first{
-  margin-left: 72px;
-}
-.left.second{
-  margin-right: 96px;
-}
-.right.fourth{
-  margin-right: 72px;
-}
-.left{
-  text-align: left;
-}
-.right{
-  text-align: right;
-}
-.logo{
-  position: absolute;
-  left:530px;
-  top:0;
-}
-.city-of-sedona{
-  text-align: center;
-  height: 216px;
-  background-color: lightblue;
-}
-.media-block{
-  width: 1200px;
-  height: 256px;
-}
-.reason{
-  float:left;
-  width: 400px;
-  height: 256px;
-  background-color: lightgreen;
-}
-figure{
-  float:right;
-  margin: 0;
-}
-.features{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: lightblue;
-}
-.feature-housing{
-  float: left;
-  width: 400px;
-  height: 330px;
-  text-align: center;
-}
-.feature-food{
-  float: left;
-  width: 400px;
-  height: 330px;
-  text-align: center;
-}
-.feature-souvenirs{
-  float: left;
-  width: 400px;
-  height: 330px;
-  text-align: center;
-}
-.reasons-list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  background-color: lightblue;
-}
-.reasons{
-  float: left;
-  width: 400px;
-  height: 256px;
-}
-.clearfix:after{
-  content: '';
-  display: table;
-  clear: both;
-}
-.hotel-search-content{
-  position: relative;
-}
-.hotel-search-header{
-  background-color: lightgreen;
-  margin-bottom: 54px;
-}
-.search-form{
-  position: absolute;
-  width: 568px;
-  height: 481px;
-  background-color: lightblue;
-  left: 316px;
-  top: -54px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.search-hotel-sedona{
-  background-color: lightgreen;
-  font-size: 14px;
-  line-height: 21px;
-}
-.main-footer{
-  position: absolute;
-  width: 1200px;
-  height: 120px;
-  bottom: 0;
-  left: 0;
-  background-color: grey;
-}
-.autor{
-  float: right;
-}
-/*catalog.html*/
-.main-content{
-  width: 1200px;
-  min-height: 757px;
-}
-.filters{
-  width: 1200px;
-  height: 217px;
-  background-color: grey;
-}
-.form-column{
-  float: left;
-  border: none;
-}
-.form-column-right{
-  float: right;
-  border: none;
-}
-ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.result{
-  width: 1200px;
-  height: 87px;
-  border-bottom: 2px solid #e5e5e5;
-  background-color: lightgreen;
-}
-.find,
-.sort-caption,
-.sort-item{
-  float: left;
-  margin-right: 32px;
-}
-.sort-up,
-.sort-down{
-  float: right;
-}
-.hotel{
-  background-color: lightblue;
-  border-bottom: 2px solid #e5e5e5;
-}
-.hotel-info{
-  float: left;
-  clear: both;
-  height: 150px;
-  width: 887px;
-}
-.hotel-img{
-  float: left;
-  margin-right: 10px;
-}
-.hotel-rating{
-  float: right;
-}
-.main-footer-catalog{
-  width: 1200px;
-  height: 120px;
-  background: grey;
-}
 /*Общие стили*/
 h1{
   font-size: 21px;
@@ -226,4 +30,276 @@ h3{
 
 p{
   margin: 0;
+}
+
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+/*index.html*/
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.banner{
+  display: block;
+}
+.main-header{
+  width: 1200px;
+  box-sizing: border-box;
+  /*временной стиль*/
+  background-color: lightblue;
+  height: 56px;
+}
+.main-navigation{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 72px;
+}
+.main-navigation li{
+  width: 240px;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+  padding-top: 18px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.main-navigation a{
+  text-decoration: none;
+  color: #000000;
+}
+.main-navigation li:nth-child(1){
+  text-align: left;
+}
+.main-navigation li:nth-child(2){
+  margin-right: 96px;
+  text-align: left;
+}
+.main-navigation li:nth-child(3){
+  text-align: right;
+}
+.main-navigation li:nth-child(4){
+  text-align: right;
+}
+.logo{
+  position: absolute;
+  left: 530px;
+  top: 0;
+}
+.city-of-sedona{
+  text-align: center;
+
+  /*временной стиль*/
+  height: 216px;
+  background-color: lightblue;
+}
+.media-block{
+  width: 1200px;
+
+  /*временной стиль*/
+  height: 256px;
+}
+.reason{
+  float: left;
+  width: 400px;
+
+  /*временной стиль*/
+  height: 256px;
+  background-color: lightgreen;
+}
+figure{
+  height: 256px;
+  float: left;
+  margin: 0;
+}
+.features{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*временной стиль*/
+  background-color: lightblue;
+}
+.feature{
+  float: left;
+  width: 400px;
+  text-align: center;
+
+  /*временной стиль*/
+  height: 330px;
+}
+.feature-housing{
+background: url('../img/i_housing.png');
+}
+.feature-food {
+background: url('../img/i_food.png');
+}
+.feature-souvenirs{
+background: url('../img/i_gifts.png');
+}
+.reasons-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  /*временной стиль*/
+  background-color: lightblue;
+}
+.reason{
+  float: left;
+  width: 400px;
+
+  /*временной стиль*/
+  height: 256px;
+}
+.hotel-search-content{
+  position: relative;
+}
+.hotel-search-header{
+  background-color: lightblue;
+}
+.search-form{
+  position: absolute;
+  width: 568px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*временной стиль*/
+  height: 481px;
+  background-color: lightblue;
+}
+.search-hotel-sedona{
+  font-size: 21px;
+  line-height: 26px;
+  width: 568px;
+  background-color: #766357;
+  text-align: center;
+  margin-left: 316px;
+  padding: 30px 0;
+  box-sizing: border-box;
+  /*временной стиль*/
+  height: 86px;
+
+}
+.main-footer.main-footer-absolute{
+  width: 1200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .8);
+
+  /*временной стиль*/
+  height: 120px;
+}
+.autor{
+  float: right;
+}
+/*catalog.html*/
+.main-content{
+/*временной стиль*/
+  min-height: 757px;
+}
+.filters{
+  padding: 0 72px;
+  box-sizing: border-box;
+
+  /*временной стиль*/
+  height: 217px;
+  background-color: grey;
+}
+legend{
+  padding: 0;
+}
+.form-column{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  float: left;
+  border: none;
+  width: 135px;
+}
+.form-column:first-child{
+  margin-right: 100px;
+}
+.form-column-right{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  color: #ffffff;
+  float: right;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 327px;
+}
+ul{
+  list-style: none;
+}
+.ul_checkbox{
+  padding: 0;
+  margin: 0;
+}
+.result{
+  border-bottom: 2px solid #e5e5e5;
+  padding: 0 72px;
+  box-sizing: border-box;
+
+  /*временной стиль*/
+  height: 87px;
+  background-color: lightgreen;
+}
+.find,
+.sort-caption,
+.sort-item{
+  float: left;
+  margin-right: 32px;
+}
+.sort-up,
+.sort-down{
+  float: right;
+}
+.hotel{
+  padding: 0 72px;
+  border-bottom: 2px solid #e5e5e5;
+
+  /*временной стиль*/
+  background-color: lightblue;
+}
+.hotel-description{
+  float: left;
+}
+.hotel-info{
+  float: left;
+  clear: both;
+  width: 887px;
+
+  /*временной стиль*/
+  height: 150px;
+}
+.hotel-img{
+  float: left;
+  margin-right: 10px;
+}
+.hotel-rating{
+  float: right;
+}
+.main-footer{
+  padding: 0 72px;
+  box-sizing: border-box;
+
+  /*временной стиль*/
+  height: 120px;
+  background: grey;
 }
