@@ -4,7 +4,7 @@ body{
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  margin:0;
+  margin: 0;
   text-transform: uppercase;
 }
 /*Общие стили*/
@@ -25,13 +25,7 @@ h3{
   color: #000000;
   font-weight: bold;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  margin: 0;
 }
-
-p{
-  margin: 0;
-}
-
 .clearfix:after{
   content: '';
   display: table;
@@ -47,7 +41,6 @@ p{
   display: block;
 }
 .main-header{
-  width: 1200px;
   box-sizing: border-box;
   /*временной стиль*/
   background-color: lightblue;
@@ -91,7 +84,7 @@ p{
   left: 530px;
   top: 0;
 }
-.city-of-sedona{
+.promo-header{
   text-align: center;
 
   /*временной стиль*/
@@ -99,8 +92,6 @@ p{
   background-color: lightblue;
 }
 .media-block{
-  width: 1200px;
-
   /*временной стиль*/
   height: 256px;
 }
@@ -112,7 +103,7 @@ p{
   height: 256px;
   background-color: lightgreen;
 }
-figure{
+.media-block > figure{
   height: 256px;
   float: left;
   margin: 0;
@@ -121,25 +112,26 @@ figure{
   margin: 0;
   padding: 0;
   list-style: none;
-  /*временной стиль*/
-  background-color: lightblue;
 }
 .feature{
   float: left;
   width: 400px;
   text-align: center;
-
+  background-repeat: no-repeat;
   /*временной стиль*/
   height: 330px;
 }
 .feature-housing{
-background: url('../img/i_housing.png');
+  background-image: url('../img/i_housing.png');
+  background-position: ;
 }
 .feature-food {
-background: url('../img/i_food.png');
+  background-image: url('../img/i_food.png');
+  background-position: ;
 }
 .feature-souvenirs{
-background: url('../img/i_gifts.png');
+  background-image: url('../img/i_gifts.png');
+  background-position: ;
 }
 .reasons-list{
   margin: 0;
@@ -156,11 +148,31 @@ background: url('../img/i_gifts.png');
   /*временной стиль*/
   height: 256px;
 }
+.interested{
+  display: block;
+  margin-bottom: 27px;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+
+}
+.prorosal{
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+  width: 437px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
+}
 .hotel-search-content{
   position: relative;
 }
 .hotel-search-header{
   background-color: lightblue;
+  padding-top: 55px;
 }
 .search-form{
   position: absolute;
@@ -172,13 +184,14 @@ background: url('../img/i_gifts.png');
   margin-right: auto;
 
   /*временной стиль*/
-  height: 481px;
+  height: 395px;
   background-color: lightblue;
 }
 .search-hotel-sedona{
   font-size: 21px;
   line-height: 26px;
   width: 568px;
+  color: #ffffff;
   background-color: #766357;
   text-align: center;
   margin-left: 316px;
@@ -188,18 +201,24 @@ background: url('../img/i_gifts.png');
   height: 86px;
 
 }
+.map-wrapper{
+  display: block;
+}
 .main-footer.main-footer-absolute{
   width: 1200px;
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: rgba(255, 255, 255, .8);
-
-  /*временной стиль*/
   height: 120px;
 }
 .autor{
   float: right;
+}
+.social{
+  width: 170px;
+  margin: 0;
+  list-style: none;
 }
 /*catalog.html*/
 .main-content{
@@ -209,12 +228,13 @@ background: url('../img/i_gifts.png');
 .filters{
   padding: 0 72px;
   box-sizing: border-box;
+  background-image: url('../img/bg_hotels_sedona.jpg');
 
   /*временной стиль*/
   height: 217px;
-  background-color: grey;
+
 }
-legend{
+.filters > legend{
   padding: 0;
 }
 .form-column{
@@ -244,12 +264,10 @@ legend{
   margin: 0;
   width: 327px;
 }
-ul{
-  list-style: none;
-}
-.ul_checkbox{
+.filters-list, .sort{
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 .result{
   border-bottom: 2px solid #e5e5e5;
@@ -287,6 +305,9 @@ ul{
 
   /*временной стиль*/
   height: 150px;
+}
+.sort-direction{
+  float: right;
 }
 .hotel-img{
   float: left;

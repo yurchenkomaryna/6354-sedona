@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Hotels</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -25,7 +25,7 @@
         <form class="filters" action="index.html" method="post">
           <fieldset class="form-column">
             <legend>Инфраструктура:</legend>
-            <ul class="ul_checkbox">
+            <ul class="filters-list">
               <li>
                 <input type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Басейн</label>
@@ -42,7 +42,7 @@
           </fieldset>
           <fieldset class="form-column">
             <legend>Тип жилья:</legend>
-            <ul class="ul_checkbox">
+            <ul class="filters-list">
               <li>
                 <input type="checkbox" name="hotel" value="" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
@@ -57,7 +57,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-column-right">
+          <fieldset class="form-column-right clearfix">
             <legend>Стоимость в сутки (р):</legend>
             <div class="range-values">
               <span>от 0 </span> <span>до 3000</span>
@@ -73,14 +73,16 @@
 
         <div class="result">
           <h2 class="find">Найдено: 3</h2>
-          <ul class="ul_checkbox">
+          <ul class="sort clearfix">
             <li class="sort-caption">Сортировка:</li>
             <li class="sort-item active"><a href="#">По цене</a></li>
             <li class="sort-item"><a href="#">По типу</a></li>
             <li class="sort-item"><a href="#">По рейтингу</a></li>
           </ul>
-          <a href="#" class="sort-up active"></a>
-          <a href="#" class="sort-down"></a>
+          <div class="sort-direction">
+            <a href="#" class="sort-up active"></a>
+            <a href="#" class="sort-down"></a>
+          </div>
         </div>
         <div class="hotel clearfix">
           <div class="hotel-info">
@@ -148,9 +150,9 @@
       </main>
 
       <footer class="main-footer">
-        <p>
+        <div class="visit-sedona">
           #visitsedona
-        </p>
+        </div>
         <ul class="social">
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>

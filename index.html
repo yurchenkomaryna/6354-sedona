@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header class="main-header">
         <a href="index.html" class="logo"><img src="img/img_logo_sedona.png" width="137" height="70" alt="city of sedona"></a>
         <nav>
-          <ul class="main-navigation">
+          <ul class="main-navigation clearfix">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -20,9 +20,9 @@
         </nav>
       </header>
       <main class="main-content">
-        <img src="img/index_sedona.jpg" width="1200" height="509" alt="Sedona" class="banner">
+        <img src="img/sedona_index.jpg" width="1200" height="509" alt="Sedona" class="banner">
         <div class="promo">
-          <header class="city-of-sedona">
+          <header class="promo-header">
             <h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </header>
@@ -105,9 +105,9 @@
           </ul>
           <div class="hotel-search">
             <header class="hotel-search-header">
-              <h1>Заинтересовались?</h1>
-              <p>
-                Укажите предполагаемые даты поездки,
+              <b class="interested">Заинтересовались?</b>
+              <p class="prorosal">
+                Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
               <h2 class="search-hotel-sedona">
@@ -142,14 +142,14 @@
               </div>
             </form>
             <div class="map-wrapper">
-              <img src="img/img_map_index.jpg" width="1200" height="593" alt="map">
+              <img src="img/img_map_index.jpg" class="map-wrapper" width="1200" height="593" alt="map">
             </div>
           </div>
         </div>
       </main>
 
       <footer class="main-footer main-footer-absolute">
-        <div class="visit_sedona">
+        <div class="visit-sedona">
           #visitsedona
         </div>
         <ul class="social">
